@@ -1,0 +1,10 @@
+.table{
+    border-collapse: collapse;
+}
+.table > thead > tr > th{
+    padding:10px;
+}
+.table td{
+    text-align: center;
+    padding:5px;
+}
