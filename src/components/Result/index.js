@@ -2,27 +2,13 @@ import { useState } from "react";
 import "./result.css";
 
 function Result({ result }) {
-    const [row, setRow] = useState([
-        {
-            creditAmount: result.creditAmount,
-            totalMoney: result.totalMoney,
-            interestRate: result.interestRate,
-            paymentAmount: Math.floor(result.paymentAmount),
-            loanTerm: result.loanTerm,
-        },
-    ]);
+    const [row, setRow] = useState([]);
     const [completed, setCompleted] = useState(false);
-    const data = {
-        creditAmount: result.creditAmount,
-        totalMoney: result.totalMoney,
-        interestRate: result.interestRate,
-        paymentAmount: Math.floor(result.paymentAmount),
-        loanTerm: result.loanTerm,
-    };
+
     const paymentDetails = (e) => {
         e.preventDefault();
         for (let i = 1; i < result.loanTerm; i++) {
-            setRow((row) => [...row, data]);
+            setRow((row) => [...row,result]);
         }
         setCompleted(true);
     };

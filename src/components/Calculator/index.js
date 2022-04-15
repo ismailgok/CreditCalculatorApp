@@ -1,6 +1,4 @@
-
-function Calculator({state, onChange,onClickButton}) {
-    
+function Calculator({ state, onChange, onClickButton }) {
     return (
         <div>
             <input

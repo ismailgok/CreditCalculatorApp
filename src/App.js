@@ -24,7 +24,7 @@ function App() {
             creditAmount: state.creditAmount,
             totalMoney: totalCredit,
             interestRate: state.interestRate,
-            paymentAmount: paymentAmount,
+            paymentAmount: Math.floor(paymentAmount),
             loanTerm: state.loanTerm,
         });
     };
