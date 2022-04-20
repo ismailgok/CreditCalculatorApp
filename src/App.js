@@ -48,6 +48,7 @@ function App() {
             {result !== null ? <Result result={result} /> : null}
         </div>
     );
+
 }
 
 export default App;
