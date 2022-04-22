@@ -9,7 +9,6 @@ function App() {
         interestRate: 0.45,
         loanTerm: 12,
     });
-
     const [result, setResult] = useState(null);
     const onClickButton = (e) => {
         e.preventDefault();
